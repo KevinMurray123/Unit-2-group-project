@@ -1,5 +1,5 @@
 let decimal = prompt(`Enter a decimal number between 0 and 255.`);
-let decimalforbinary = decimal;
+let originaldecimal = decimal;
 
 //binary
 
@@ -54,8 +54,8 @@ if(decimal >= 1)
 
 //hexidecimal
 
-rem1 = decimalforbinary % 16;
-dec1 = decimalforbinary / 16;
+rem1 = originaldecimal % 16;
+dec1 = originaldecimal / 16;
 rem2 = Math.floor(dec1) % 16
 
 //remainder1
@@ -122,6 +122,6 @@ if(rem2 == 15) {
     
 }
 
-console.log(`The binary of ${decimalforbinary} is ${binary128}${binary64}${binary32}${binary16} ${binary8}${binary4}${binary2}${binary1}`);
+console.log(`The binary of ${originaldecimal} is ${binary128}${binary64}${binary32}${binary16} ${binary8}${binary4}${binary2}${binary1}`);
 
-console.log(`The hexadecimal of ${decimalforbinary} is ${rem2}${rem1}`);
+console.log(`The hexadecimal of ${originaldecimal} is ${rem2}${rem1}`);
